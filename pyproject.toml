@@ -1,0 +1,23 @@
+[project]
+name = "microservicios"
+version = "0.1.0"
+description = "Calculadora implementada con microservicios"
+readme = "README.md"
+authors = [
+    { name = "Harold Camacho Herrera", email = "haroldherrera2001@outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[stardard]>=0.143.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+microservicios = "microservicios:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
